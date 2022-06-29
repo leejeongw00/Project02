@@ -25,7 +25,7 @@
 }
 
 .bg-image {
-  background-image: url('https://bootstrapious.com/i/snippets/sn-page-split/bg.jpg');
+  background-image: url('../resources/img/lock.jpeg');
   background-size: cover;
   background-position: center center;
 }
@@ -50,7 +50,12 @@ function loginCheck(form) {
 </script>
 </head>
 <body>
-
+	<header>
+		<jsp:include page="/layout/header.jsp" />
+	</header>
+	
+	
+	
 	<div class="container-fluid">
 		<div class="row no-gutter">
 			<!-- The image half -->
@@ -65,11 +70,13 @@ function loginCheck(form) {
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-10 col-xl-7 mx-auto">
-								<h3 >로그인페이지</h3>
+							<h1>Welcome!</h1>
+							<br /><br /><br /><br />
+								<h3 >로그인</h3>
 								
 								<form onsubmit="return loginCheck(this);" method="post">
 									<div class="form-group mb-3">
-										<input name="user_id" type="text" placeholder="id입력" class="form-control rounded-pill border-0 shadow-sm px-4" required>
+										<input name="user_id" type="text" placeholder="id" class="form-control rounded-pill border-0 shadow-sm px-4" required>
 									</div>
 									<div class="form-group mb-3">
 										<input name="user_pw" type="password" placeholder="Password" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary" required>

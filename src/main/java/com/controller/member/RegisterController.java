@@ -33,8 +33,6 @@ public class RegisterController extends HttpServlet {
 		회원가입 전송 부분 
 		*/
 		
-		req.setCharacterEncoding("UTF-8"); //인코딩 지정 xml에서 작업했다면 안해도되지만...
-		
 		String user_id = req.getParameter("user_id");
 		String user_pw = req.getParameter("user_pw1");
 		String user_name = req.getParameter("user_name");

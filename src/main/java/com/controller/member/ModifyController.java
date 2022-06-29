@@ -65,7 +65,6 @@ public class ModifyController extends HttpServlet {
 		mDto.setUser_name(user_name);
 		mDto.setUser_email(user_email);
 		mDto.setUser_phone(user_phone);
-		mDto.setMemberLevel(memberLevel);
 		
 		int joinResult = mDao.memberUpdate(mDto);
 		

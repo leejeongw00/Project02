@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>파일 첨부형 게시판</title>
+<title>동네 축구</title>
 
 <script type="text/javascript">
 	//글쓰기 폼에서 누락된 내용이 있는지 확인하는 함수
@@ -20,7 +20,7 @@
 </script>
 </head>
 <body>
-<h2>파일 첨부형 게시판 - 패스워드 검증(Pass)</h2>
+<h2>건의사항</h2>
 <!-- 
 해당 요청명으로 넘어온 파라미터는 컨트롤러에서 받은 후 request영역에 저장하여
 View에서 확인할 수 있지만, EL을 이용하면 해당 과정없이 param내장객체로 즉시

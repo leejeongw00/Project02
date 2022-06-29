@@ -154,9 +154,9 @@
 					
 						<!-- id -->
 						<div class="col-12">
-							<label for="user_id" class="form-label">ID</label> 
+							<label for="user_id" class="form-label">아이디</label> 
 							<div class="input-group mb-3">
-								<input type="text" class="form-control" id="user_id" name="user_id" placeholder="">
+								<input type="text" class="form-control" id="user_id" name="user_id" placeholder="영문,숫자 5~11자">
 								<button type="button" class="btn btn-outline-secondary" onclick="idCheck(this.form);">중복확인</button>    
 							</div>
 							<div class="invalid-id"></div>
@@ -166,12 +166,12 @@
 						<!-- pw -->
 						<div class="col-sm-6">
 							<label for="user_pw1" class="form-label">패스워드</label> 
-							<input type="text" class="form-control" id="user_pw1" name="user_pw1" placeholder="">
+							<input type="password" class="form-control" id="user_pw1" name="user_pw1" placeholder="영문,숫자 최소 8자">
 						</div>
 						
 						<div class="col-sm-6">
 							<label for="user_pw2" class="form-label">패스워드 확인</label> 
-							<input type="text" class="form-control" id="user_pw2" name="user_pw2" placeholder="">
+							<input type="text" class="form-control" id="user_pw2" name="user_pw2" placeholder="패스워드 재입력">
 						</div>
 						
 						<div class="col-12">
@@ -181,7 +181,7 @@
 						<!-- name -->
 						<div class="col-12">
 							<label for="user_name" class="form-label">이름</label> 
-							<input type="text" class="form-control" id="user_name" name="user_name" placeholder="">
+							<input type="text" class="form-control" id="user_name" name="user_name" placeholder="이름을 입력하세요">
 							<div class="invalid-name"></div>
 						</div>
 
@@ -189,14 +189,14 @@
 						<div class="col-12">
 							<label for="user_email" class="form-label">이메일</label>
 							<div class="input-group has-validation">
-								<input type="text" class="form-control" id="user_email1" name="user_email1" placeholder="user_email1">
+								<input type="text" class="form-control" id="user_email1" name="user_email1" placeholder="email 1">
 								<span class="input-group-text">@</span> 
 								
-								<input type="text" class="form-control" id="user_email2" name="user_email2" placeholder="user_email2">
+								<input type="text" class="form-control" id="user_email2" name="user_email2" placeholder="email 2">
 								
 								
 								<select class="form-select" id="email_domain" name="email_domain" onchange="inputEmail(this.form);">
-									<option value="" selected="selected">Choose...</option>
+									<option value="" selected="selected">Choose</option>
 								    <option value="naver.com">naver.com</option>
 								    <option value="daum.net">daum.net</option>
 								    <option value="hanmail.net">hanmail.net</option>
@@ -215,7 +215,7 @@
 							<label for="user_phone" class="form-label">휴대폰번호</label>
 							<div class="input-group has-validation">
 								<select class="form-select" id="country" name="user_phone1" required="">
-									<option value="" selected="selected">Choose...</option>
+									<option value="" selected="selected">Choose</option>
 								  	<option value="010" >010</option>
 								    <option value="011">011</option>
 								    <option value="016">016</option>
@@ -223,9 +223,9 @@
 								    <option value="018">018</option>
 								    <option value="019">019</option>
 								</select> 
-								<input type="text" class="form-control" id="user_phone2" name="user_phone2" placeholder="user_phone2"> 
+								<input type="text" class="form-control" id="user_phone2" name="user_phone2" placeholder="@@@@"> 
 								<span class="input-group-text">-</span> 
-								<input type="text" class="form-control" id="user_phone3" name="user_phone3" placeholder="user_phone3">
+								<input type="text" class="form-control" id="user_phone3" name="user_phone3" placeholder="@@@@">
 								
 							</div>
 						</div>
@@ -243,7 +243,7 @@
 				</form>
 			</div>
 		</div>
-
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 		<jsp:include page="/layout/footer.jsp" />
 	</div>
 </body>

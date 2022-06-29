@@ -6,17 +6,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>파일 첨부형 게시판</title>
+<title>동네 축구</title>
 <style>a{text-decoration:none;}</style>
 </head>
 <body>
-    <h2>건의사항</h2>
+	<header>
+		<jsp:include page="/layout/header.jsp" />
+	</header>
 
+    <h2>건의사항</h2>
+	<div>
+		<li class="nav-item "><a class="nav-link active" href="${pageContext.request.contextPath}/Home/list.do">건의사항
+		</a></li>
+	</div>
+	<div>
+		<li class="nav-item "><a class="nav-link active" href="${pageContext.request.contextPath}/Home/list2.do">자유게시판
+			<span class="sr-only"></span>
+		</a></li>
+	</div>
     <!-- 검색 폼 -->
     <form method="get">  
     <table border="1" width="90%">
     <tr>
-        <td align="center">
+        <td align="right">
             <select name="searchField">
                 <option value="title">제목</option>
                 <option value="content">내용</option>
@@ -97,5 +109,7 @@
                 onclick="location.href='../Home/write.do';">글쓰기</button></td>
         </tr>
     </table>
+    <br /><br /><br /><br />
+<jsp:include page="/layout/footer.jsp" />
 </body>
 </html>

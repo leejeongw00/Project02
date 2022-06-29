@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>파일 첨부형 게시판</title>
+<title>동네 축구</title>
 </head>
 <body>
-<h2>자유게시판</h2>
+<h2>건의사항</h2>
 
 <table border="1" width="90%">
     <colgroup>
@@ -57,5 +57,6 @@
         </td>
     </tr>
 </table>
+<jsp:include page="/layout/footer.jsp" />
 </body>
 </html>

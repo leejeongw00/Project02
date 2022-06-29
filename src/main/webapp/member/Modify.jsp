@@ -244,56 +244,7 @@
 					</div>
 					
 
-					<!-- hoddy -->
-					<!-- ,로 구분된걸 나누어서 배열로 받기위해서 ...-->
-
-					<div class="col-12">
-						<label for="user_hoddy" class="form-label">관심분야</label>
-						<div class="input-group has-validation">
-							<c:set var="hoddy_list" value="캠핑,등산,영화,독서" scope="application"/>
-							
-							<c:forEach items="${fn:split(hoddy_list,',') }" var="one" varStatus="loop">
-								<input class="form-check-input" type="checkbox" name="user_hoddy" value="${one}" id="ch${loop.count}"
-								${fn:indexOf(dto.user_hoddy,one) >= 0 ? 'checked':''}>
-								<label class="form-check-label" for="ch${loop.count}">${one}&nbsp;&nbsp;</label>
-							</c:forEach>
-							
-							
-						</div>
 						
-						<div class="invalid-hoddy"></div>
-					</div>
-					
-					<!-- job -->
-					<div class="col-12">
-						<label for="user_job" class="form-label">직업</label>
-						<div class="input-group has-validation">
-							<select class="form-select" id="user_job" name="user_job">
-								<option value="" >Choose...</option>
-								<option value="교사" ${dto.user_job=='교사'?'selected':'' }>교사</option>
-							    <option value="변호사" ${dto.user_job=='변호사'?'selected':'' }>변호사</option>
-							    <option value="의사" ${dto.user_job=='의사'?'selected':'' }>의사</option>
-							    <option value="기술사" ${dto.user_job=='기술사'?'selected':'' }>기술사</option>
-							</select> 
-						</div>
-						
-						<div class="invalid-job"></div>
-					</div>
-					
-					<!-- info -->
-					<div class="col-12">
-						<label for="user_info" class="form-label">하고싶은말</label>
-						<div class="input-group has-validation">
-							<textarea class="form-control" id="user_info" name="user_info" rows="3">${dto.user_info}</textarea>
-						</div>
-					</div>
-
-					<hr class="my-4">
-						<div class="col-12">
-							<button class="w-100 btn btn-primary btn-lg" type="submit">회원가입</button>
-						</div>
-						
-					</div>
 				</form>
 			</div>
 		</div>

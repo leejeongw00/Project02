@@ -4,6 +4,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<script src="<%=request.getContextPath()%>/resources/jQuery/jquery-3.6.0.min.js"></script>
+
+<link href="<%=request.getContextPath()%>/resources/bootstrap-5.1.3/css/bootstrap.min.css" rel="stylesheet">
+<script src="<%=request.getContextPath()%>/resources/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
 <meta charset="UTF-8">
 
 
@@ -25,8 +31,8 @@ nav .navbar-nav  a.nav-link.active {
 	<nav class="navbar navbar-expand-lg navbar-light bg-light"
 		style="z-index: 2000;">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="${pageContext.request.contextPath}"> <img alt="Vue logo"
-				src="<%=request.getContextPath()%>/resources/img/logo.png" style="height: 35px;" />
+			<a class="navbar-brand" href="${pageContext.request.contextPath}/Home/Main.jsp"> <img alt="logo"
+				src="../resources/img/엠블럼.jpg" style="height: 35px;" />
 			</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -39,12 +45,32 @@ nav .navbar-nav  a.nav-link.active {
 					<li class="nav-item "><a class="nav-link active" href="${pageContext.request.contextPath}/Home/Main.jsp">홈
 							<span class="sr-only"></span>
 					</a></li>
+					<li class="nav-item "><a class="nav-link active" href="${pageContext.request.contextPath}/Home/list.do">커뮤니티
+							<span class="sr-only"></span>
+					</a></li>
+					<li class="nav-item "><a class="nav-link active" href="${pageContext.request.contextPath}/Home/schedule.do">일정
+							<span class="sr-only"></span>
+					</a></li>
+					<li class="nav-item "><a class="nav-link active" href="${pageContext.request.contextPath}/Home/record.do">기록
+							<span class="sr-only"></span>
+					</a></li>
+					<li class="nav-item "><a class="nav-link active" href="${pageContext.request.contextPath}/Home/memberview.do">멤버
+							<span class="sr-only"></span>
+					</a></li>
 					<c:choose>
 						<c:when test="${empty USER_ID}">
 							<li class="nav-item"><a class="nav-link"
 							href="${pageContext.request.contextPath}/member/login.do">로그인</a></li>
 							<li class="nav-item"><a class="nav-link"
 								href="${pageContext.request.contextPath}/member/register.do">회원가입</a></li>
+						</c:when>
+						<c:when test="${ USER_ID == 'admin' }">
+							<li class="nav-item"><a class="nav-link"
+							href="${pageContext.request.contextPath}/admin/admin.do">관리자페이지</a></li>
+							<li class="nav-item"><a class="nav-link"
+							href="${pageContext.request.contextPath}/member/modify.do">회원수정</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="${pageContext.request.contextPath}/member/logout.do">로그아웃</a></li>
 						</c:when>
 						<c:otherwise>
 							<li class="nav-item"><a class="nav-link"
@@ -53,15 +79,11 @@ nav .navbar-nav  a.nav-link.active {
 								href="${pageContext.request.contextPath}/member/logout.do">로그아웃</a></li>
 						
 						</c:otherwise>
-					
 					</c:choose>
+					
 					
 				</ul>
 
-				<form class="d-flex">
-					<input class="form-control me-2" type="text" placeholder="Search">
-					<button class="btn btn-primary" type="button">Search</button>
-				</form>
 			</div>
 		</div>
 	</nav>

@@ -32,7 +32,7 @@
 </script>
 </head>
 <body>
-<h2>파일 첨부형 게시판 - 글쓰기(Write)</h2>
+<h2>건의사항</h2>
 <form name="writeFrm" method="post" enctype="multipart/form-data" action="../Home/write.do" onsubmit="return validateForm(this);">
 <table border="1" width="90%">
    <tr>
@@ -79,5 +79,7 @@
    
 </table>
 </form>
+<!-- Copyright -->
+	<%@ include file="/layout/copyright.jsp" %>
 </body>
 </html>

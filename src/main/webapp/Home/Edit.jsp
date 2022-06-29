@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>파일 첨부형 게시판</title>
+<title>동네 축구</title>
 <script type="text/javascript">
 	//글쓰기 폼에서 누락된 내용이 있는지 확인하는 함수
 	function validateForm(form){
@@ -34,7 +34,7 @@
 </script>
 </head>
 <body>
-<h2>파일 첨부형 게시판 - 수정하기(Edit)</h2>
+<h2>건의사항</h2>
 
 <form name="writeFrm" method="post" enctype="multipart/form-data" 
 	action="../Home/edit.do" onsubmit="return validateForm(this);">
@@ -98,5 +98,6 @@
 	</tr>
 </table>	
 </form>
+<jsp:include page="/layout/footer.jsp" />
 </body>
 </html>

@@ -9,6 +9,15 @@ public class MemberDTO {
 	private String user_email; // 이메일
 	private String user_phone; // 휴대폰번호
 	private Date megister_date; // 가입일
+	private String memberLevel; //회원등급
+
+	public String getMemberLevel() {
+		return memberLevel;
+	}
+
+	public void setMemberLevel(String memberLevel) {
+		this.memberLevel = memberLevel;
+	}
 
 	/**
 	 * @return the user_id

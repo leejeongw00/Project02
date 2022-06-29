@@ -1,5 +1,9 @@
 package com.member;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 import common.DBConnPool;
 
 public class MemberDAO extends DBConnPool {
@@ -8,13 +12,12 @@ public class MemberDAO extends DBConnPool {
 	public MemberDAO() {
 		super();
 	}
-
 	// 회원가입
 	public int memberInsert(MemberDTO mDto) {
 		int result = 0;
 
 		try {
-			String sql = "insert into member2 values" + "(?, ?, ?, ?, ?, sysdate, user)";
+			String sql = "insert into member2 values" + "(?, ?, ?, ?, ?, sysdate, 'user')";
 
 			// query문 확인
 			System.out.println("memberInsert:" + sql);
@@ -60,7 +63,7 @@ public class MemberDAO extends DBConnPool {
 				dto.setUser_name(rs.getString(3));
 				dto.setUser_email(rs.getString(4));
 				dto.setUser_phone(rs.getString(5));
-				dto.setMegister_date(rs.getDate(9));
+				dto.setMegister_date(rs.getDate(6));
 
 			}
 

@@ -29,7 +29,7 @@
     </tr>
     <tr>
         <td>내용</td>
-        <td colspan="3" height="100">${dto.content } <img src="../Uploads/" width="150"/></td>
+        <td colspan="3" height="100">${dto.content } </td>
     </tr> 
     <tr>
         <td>첨부파일 </td>

@@ -48,5 +48,8 @@
 	//자원해제
 	jdbc.close();
 	%>
+	<footer>
+		<jsp:include page="/layout/footer.jsp" />
+	</footer>
 </body>
 </html>

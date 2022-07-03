@@ -171,7 +171,7 @@
 						
 						<div class="col-sm-6">
 							<label for="user_pw2" class="form-label">패스워드 확인</label> 
-							<input type="text" class="form-control" id="user_pw2" name="user_pw2" placeholder="패스워드 재입력">
+							<input type="password" class="form-control" id="user_pw2" name="user_pw2" placeholder="패스워드 재입력">
 						</div>
 						
 						<div class="col-12">

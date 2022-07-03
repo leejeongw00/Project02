@@ -8,7 +8,7 @@
 <title>동네 축구</title>
 </head>
 <body>
-<h2>건의사항</h2>
+<h2>자유게시판</h2>
 
 <table border="1" width="90%">
     <colgroup>
@@ -29,7 +29,7 @@
     </tr>
     <tr>
         <td>내용</td>
-        <td colspan="3" height="100">${dto.content } <img src="../Uploads/" width="150"/></td>
+        <td colspan="3" height="100">${dto.content }</td>
     </tr> 
     <tr>
         <td>첨부파일 </td>

@@ -32,7 +32,7 @@
 </script>
 </head>
 <body>
-<h2>건의사항</h2>
+<h2>자유게시판</h2>
 <form name="writeFrm" method="post" enctype="multipart/form-data" action="../Home/write2.do" onsubmit="return validateForm(this);">
 <table border="1" width="90%">
    <tr>

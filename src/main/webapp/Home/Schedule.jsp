@@ -11,6 +11,7 @@
 	<header>
 		<jsp:include page="/layout/header.jsp" />
 	</header>
+	<h2>일정</h2>
 	<div>
 		<strong> 아이디 </strong>
 		<input type = "text" name = "name" value = "아이디 입력">
@@ -25,16 +26,16 @@
 		<!-- type이 password면 **** 형태로 출력된다. -->
 	</div>
 	<div>
-		<strong>성별</strong>
-		<input type = "radio" name = "gender" value = "M"> Male
-		<input type = "radio" name = "gender" value = "F"> Female
+		<strong>참여여부</strong>
+		<input type = "radio" name = "gender" value = "M"> 참
+		<input type = "radio" name = "gender" value = "F"> 불참
 		<!-- radio: 단일 선택 -->
 	</div>
 	<div>
-		<strong>마음에 드는 팀 이름</strong>
-		<input type = "checkbox" name = "teamname" value = "Pudding"> Pudding
-		<input type = "checkbox" name = "teamname" value = "Cake"> Cake
-		<input type = "checkbox" name = "teamname" value = "Macaron"> Macaron
+		<strong>원하는 요일</strong>
+		<input type = "checkbox" name = "teamname" value = "Pudding"> 금
+		<input type = "checkbox" name = "teamname" value = "Cake"> 토
+		<input type = "checkbox" name = "teamname" value = "Macaron"> 일
 		<!-- checkbox: 복수 선택 -->
 	</div>
 	<div>
